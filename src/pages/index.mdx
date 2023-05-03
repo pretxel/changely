@@ -10,56 +10,16 @@ export async function getStaticProps() {
 
 ---
 
-![](@/images/commit-suggestions.png)
+![](@/images/timeline_networking.web_1934_worldbrain.jpg)
 
-## Commit message suggestions {{ date: '2023-04-06T00:00Z' }}
+## World Brains {{  date: '1934-03-03T00:00Z' }}
 
-In the latest release, I've added support for commit message and description suggestions via an integration with OpenAI. Commit looks at all of your changes, and feeds that into the machine with a bit of prompt-tuning to get back a commit message that does a surprisingly good job at describing the intent of your changes.
-
-It's also been a pretty helpful way to remind myself what the hell I was working on at the end of the day yesterday when I get back to my computer and realize I didn't commit any of my work.
-
-### <SparkleIcon /> Improvements
-
-- Added commit message and description suggestions powered by OpenAI
-- Fixed race condition that could sometimes leave you in a broken rebase state
-- Improved active project detection to try and ignore file changes triggered by the system instead of the user
-- Fixed bug that sometimes reported the wrong number of changed files
+Belgian Paul Otlet has a modest goal: collect, organize, and share all the world’s knowledge. Otlet had co-created a massive “search engine” starting in the early 1900s. His Mundaneum now combines enhanced card catalogs with sixteen million entries, photos, documents, microfilm, and more. He is working on integrating telegraphy and multiple media, from sound recordings to television. In the 1930s British writer H.G. Wells and American scientist Vannevar Bush are advancing similar goals—Wells with his “World Brain” writings and Bush with the Memex, a sort of microfilm-based Web browser. These approaches to organizing information differ. But all share key features of today’s Web, including automated cross-references – which we call hyperlinks.
 
 ---
 
-![](@/images/configuration-files.png)
+![](@/images/timeline_networking.web_1933_telex.jpg)
 
-## Project configuration files {{ date: '2023-03-17T00:00Z' }}
+## Telex messaging network comes on line {{  date: '1933-03-03T00:00Z' }}
 
-I've added support for creating per-project `.commitrc` files that override your global settings for that particular project. Went with YAML for these because personally I'm sick of quoting keys in JSON all the time, or accidentally leaving in a trailing comma.
-
-### <SparkleIcon /> Improvements
-
-- Added per-project `.commitrc` configuration files
-- Improved performance when working with projects with large binary files
-- Fixed a bug that could cause Commit to crash when autocommitting after deleting a recently active branch
-
----
-
-![](@/images/dark-mode.png)
-
-## Dark mode support {{ date: '2023-03-06T00:00Z' }}
-
-I released this thing last week hoping a couple of people would say "awesome job" and make me feel good about what I'd built but instead I just got a ton of people shaming me on Twitter for being such a horrible person for only shipping a light UI.
-
-### <SparkleIcon /> Improvements
-
-- Added dark mode support
-- Improved input field responsiveness when writing a commit message in a project with a large number of changed files
-- Made keyboard shortcut for opening the Commit window customizable
-- Deleted my Twitter account
-
----
-
-![](@/images/first-release.png)
-
-## Commit v0.1.0 {{  date: '2023-03-03T00:00Z' }}
-
-Commit is a command palette-style Git client you can pull up from anywhere with a keyboard shortcut that makes it really easy to commit your work. It uses the "last modified" timestamp of the files in all of your projects to automatically know which project you're in the middle of working on, so any time you pull up the UI it's already got the right project selected — you just have to type your commit message, hit <kbd>Cmd</kbd> + <kbd>Enter</kbd> and your changes are captured.
-
-I'd be lying if I really thought this was that useful but I was looking for an excuse to learn macOS development and here we are. It's open source at least so maybe you can find something interesting in the code even if the app itself is a total waste of hard drive space.
+Like the Volkswagen Beetle and modern freeway systems, the Telex messaging network comes out of the early period of Germany’s Third Reich. Telex starts as a way to distribute military messages, but soon becomes a world-wide network of both official and commercial text messaging that will persist in some countries into the 2000s. Telex uses teleprinters, which date back to the 1910s for use in telegraphy. But instead of using pricey dedicated telegraph lines, the telex system connects those teleprinters to each other over voice telephone lines, routed by modified telephone switches. Wireless versions of Telex soon connect remote regions of the developing world
